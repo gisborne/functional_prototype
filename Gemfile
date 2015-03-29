@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
-ruby '1.9.3', engine: 'jruby', engine_version: '1.7.13'
 
 # Standard Rails gems
 gem 'rails', '4.1.7'
 gem 'sass-rails', '4.0.3'
 gem 'uglifier', '2.5.3'
-gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.1.2'
 gem 'turbolinks', '2.5.1'
 gem 'jbuilder', '2.2.4'
@@ -31,7 +29,8 @@ group :development, :test do
 end
 
 # PostgreSQL
-gem 'activerecord-jdbcpostgresql-adapter'
+# gem 'activerecord-jdbcpostgresql-adapter'
+gem 'pg'
 
 # Devise: https://github.com/plataformatec/devise
 gem 'devise', '3.4.1'
